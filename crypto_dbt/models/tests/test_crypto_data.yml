@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_crypto_prices
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+
+      - name: coin_name
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['BITCOIN','ETHEREUM','SOLANA','DOGECOIN','XRP']
+
+      - name: price_usd
+        tests:
+          - not_null
+
+  - name: mart_coin_summary
+    columns:
+      - name: coin_name
+        tests:
+          - not_null
+      - name: avg_price
+        tests:
+          - not_null
