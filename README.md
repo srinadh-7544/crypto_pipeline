@@ -37,3 +37,61 @@ The **Crypto Data Pipeline** is an end-to-end data engineering project that extr
 ---
 
 ## 📂 Project Structure
+crypto_pipeline/
+│── data/ # Stored datasets
+│── scripts/ # Pipeline scripts
+│── .env # API keys (ignored)
+│── requirements.txt # Dependencies
+│── main.py # Main pipeline file
+│── README.md
+
+## ▶️ How to Run
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/srinadh-7544/crypto_pipeline.git
+cd crypto_pipeline
+
+2️⃣ Create Virtual Environment
+python -m venv .venv
+source .venv/bin/activate   # (Linux/Mac)
+.venv\Scripts\activate      # (Windows)
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Run Pipeline
+python main.py
+
+🔐 Environment Variables
+
+Create a .env file and add:
+
+API_KEY=your_api_key_here
+
+📈 Future Improvements
+⏱️ Schedule pipeline using Airflow
+📊 Build dashboard using Tableau / Power BI
+🗄️ Store data in PostgreSQL / Data Warehouse
+☁️ Deploy pipeline on AWS / GCP
+
+
+👨‍💻 Author
+
+Srinadh Naidu
+
+Aspiring Data Engineer | Data Science Enthusiast
+
+
+
+---
+
+## 🔥 Next Level (Highly Recommended)
+
+To make this project **stand out for recruiters**, I can:
+- Add **architecture diagram**
+- Add **real dataset screenshots**
+- Optimize for **90+ ATS resume points**
+- Write **LinkedIn viral post**
+
+Just tell me 👍
